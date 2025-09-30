@@ -12,9 +12,16 @@ URL = "https://results.beup.ac.in/BTech5thSem2024_B2022Results.aspx"
 
 CHECK_INTERVAL = 2
 CONTINUOUS_DURATION = 900
-SCHEDULED_INTERVAL = 7200
+SCHEDULED_INTERVAL = 4
 
 RESULT_URLS = [
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22156148040",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22156148042",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22156148051",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22156148018",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22156148012",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22104148015",
+    "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22101148008",
     "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22101148001",
     "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22101148002",
     "https://results.beup.ac.in/ResultsBTech5thSem2024_B2022Pub.aspx?Sem=V&RegNo=22101148003",
