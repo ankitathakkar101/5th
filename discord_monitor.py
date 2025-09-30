@@ -386,7 +386,7 @@ class DiscordMonitor:
                 emoji = "✅" if current == "UP" else "🔴"
                 timestamp = datetime.now().strftime("%I:%M:%S %p")
                 if current == "DOWN":
-                    await self.send_discord_message(f"{emoji} Scheduled update: Website is {current} [{timestamp}]")
+                    await self.send_discord_message(f"{emoji} Scheduled update: Website is {current} [{timestamp} IST]")
                 else:
                     await self.send_discord_message(f"{emoji} Scheduled update: Website is {current}")
                 self.last_scheduled_time = now
