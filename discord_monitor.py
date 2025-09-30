@@ -383,7 +383,7 @@ class DiscordMonitor:
                     await self.send_discord_message("🔴 WEBSITE IS DOWN")
                     self.last_scheduled_time = now
 
-             elif scheduled_due:
+            elif scheduled_due:
                 emoji = "✅" if current == "UP" else "🔴"
                 ist = pytz.timezone('Asia/Kolkata')
                 timestamp = datetime.now(ist).strftime("%I:%M:%S %p")
