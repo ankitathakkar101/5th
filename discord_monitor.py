@@ -3,6 +3,7 @@ import os
 import time
 import aiohttp
 import zipfile
+import pytz
 from io import BytesIO
 from datetime import datetime
 from typing import Optional, List
@@ -382,11 +383,12 @@ class DiscordMonitor:
                     await self.send_discord_message("🔴 WEBSITE IS DOWN")
                     self.last_scheduled_time = now
 
-            elif scheduled_due:
+             elif scheduled_due:
                 emoji = "✅" if current == "UP" else "🔴"
-                timestamp = datetime.now().strftime("%I:%M:%S %p")
+                ist = pytz.timezone('Asia/Kolkata')
+                timestamp = datetime.now(ist).strftime("%I:%M:%S %p")
                 if current == "DOWN":
-                    await self.send_discord_message(f"{emoji} Scheduled update: Website is {current} [{timestamp} IST]")
+                    await self.send_discord_message(f"{emoji} Scheduled update: Website is {current} [{timestamp}]")
                 else:
                     await self.send_discord_message(f"{emoji} Scheduled update: Website is {current}")
                 self.last_scheduled_time = now
